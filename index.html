@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Татьяна — QA-специалист</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Фоновые декоративные элементы -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+  </div>
+
+  <!-- Навигация -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">T<span class="nav__dot">.</span></a>
+      <ul class="nav__links">
+        <li><a href="#about" class="nav__link">О себе</a></li>
+        <li><a href="#skills" class="nav__link">Стек</a></li>
+        <li><a href="#projects" class="nav__link">Проекты</a></li>
+        <li><a href="#docs" class="nav__link">Документация</a></li>
+        <li><a href="#artifacts" class="nav__link">Артефакты</a></li>
+        <li><a href="#contact" class="nav__link">Контакты</a></li>
+      </ul>
+      <button class="nav__burger" id="navBurger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="nav__link">О себе</a></li>
+      <li><a href="#skills" class="nav__link">Стек</a></li>
+      <li><a href="#projects" class="nav__link">Проекты</a></li>
+      <li><a href="#docs" class="nav__link">Документация</a></li>
+      <li><a href="#artifacts" class="nav__link">Артефакты</a></li>
+      <li><a href="#contact" class="nav__link">Контакты</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <div class="hero__text">
+          <p class="hero__greeting reveal">Привет! Я</p>
+          <h1 class="hero__name reveal reveal--delay-1">Татьяна</h1>
+          <p class="hero__role reveal reveal--delay-2">
+            <span class="hero__role-badge">QA-специалист</span>
+          </p>
+          <p class="hero__tagline reveal reveal--delay-3">
+            Делаю продукты надёжными, удобными<br>и дружелюбными к пользователям
+          </p>
+          <div class="hero__actions reveal reveal--delay-4">
+            <a href="#projects" class="btn btn--primary">Посмотреть работы</a>
+            <a href="#contact" class="btn btn--ghost">Написать мне</a>
+          </div>
+        </div>
+        <div class="hero__photo reveal reveal--delay-2">
+          <div class="hero__photo-frame">
+            <img src="images/Image.png" alt="Фото Татьяны">
+          </div>
+          <div class="hero__photo-badge">
+            <span>✓</span> QA Engineer
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span>Скролл</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- О себе -->
+    <section class="section about" id="about">
+      <div class="section__inner">
+        <div class="section__label reveal">Обо мне</div>
+        <h2 class="section__title reveal">Кто я такая 👩‍💻</h2>
+        <div class="about__grid">
+          <div class="about__main reveal">
+            <p class="about__lead">Выпускница Яндекс Практикума. Мой менеджерский бэкграунд — это суперсила в тестировании.</p>
+            <p>Я вижу продукт целиком, понимаю бизнес-контекст, умею расставлять приоритеты и довожу задачи до финального результата.</p>
+            <p>Люблю работать в команде и находить решения даже в сложных ситуациях <em class="about__aside">— «упало, но не у меня» точно не мой девиз.</em></p>
+            <a href="images/2024-6188-018.pdf" target="_blank" class="btn btn--outline" style="margin-top:1.5rem; display:inline-flex; align-items:center; gap:0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Сертификат ЯПрактикум
+            </a>
+          </div>
+          <div class="about__highlight-card reveal reveal--delay-1">
+            <div class="about__highlight-icon">🎯</div>
+            <h3>Моя миссия в QA</h3>
+            <p>Не просто находить ошибки, а делать продукты удобнее, надёжнее и дружелюбными к пользователям.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Цели -->
+    <section class="section goals" id="goals">
+      <div class="section__inner">
+        <div class="section__label reveal">Направление</div>
+        <h2 class="section__title reveal">Мои цели 🚀</h2>
+        <div class="goals__grid">
+          <div class="goal-card reveal">
+            <div class="goal-card__num">01</div>
+            <p>Создавать надёжные и удобные продукты, помогая командам находить и предотвращать проблемы до того, как их увидят пользователи.</p>
+          </div>
+          <div class="goal-card reveal reveal--delay-1">
+            <div class="goal-card__num">02</div>
+            <p>Развиваться как QA-инженер, углубляя технические знания и практику тестирования.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Технологии -->
+    <section class="section skills" id="skills">
+      <div class="section__inner">
+        <div class="section__label reveal">Инструменты</div>
+        <h2 class="section__title reveal">Технологии и стек ⚡</h2>
+        <div class="skills__categories reveal">
+
+          <div class="skill-group">
+            <div class="skill-group__title">Баг-трекинг</div>
+            <div class="skill-group__chips">
+              <span class="chip">🐞 Jira</span>
+              <span class="chip">🧩 YouTrack</span>
+              <span class="chip">📋 Qase</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group__title">API и сеть</div>
+            <div class="skill-group__chips">
+              <span class="chip">📡 Postman</span>
+              <span class="chip">📶 Charles</span>
+              <span class="chip">🛠 DevTools</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group__title">Базы данных</div>
+            <div class="skill-group__chips">
+              <span class="chip">🗄 MySQL</span>
+              <span class="chip">🛢 DBeaver</span>
+              <span class="chip">🗄 PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group__title">Документация и дизайн</div>
+            <div class="skill-group__chips">
+              <span class="chip">📓 Notion</span>
+              <span class="chip">🎨 Figma</span>
+              <span class="chip">🗺 Miro</span>
+              <span class="chip">📊 draw.io</span>
+              <span class="chip">📚 Confluence</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group__title">Разработка</div>
+            <div class="skill-group__chips">
+              <span class="chip">🌐 HTML</span>
+              <span class="chip">🎨 CSS</span>
+              <span class="chip">⚛ React</span>
+              <span class="chip">▲ Next.js</span>
+              <span class="chip">🐍 Django</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group__title">Прочее</div>
+            <div class="skill-group__chips">
+              <span class="chip">📱 Android Studio</span>
+              <span class="chip">🐙 Git</span>
+              <span class="chip">💻 VS Code</span>
+              <span class="chip">🧩 Tilda</span>
+              <span class="chip">🫧 Bubble</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Проекты -->
+    <section class="section projects" id="projects">
+      <div class="section__inner">
+        <div class="section__label reveal">Кейсы</div>
+        <h2 class="section__title reveal">Проекты 🌐</h2>
+        <div class="project-cards">
+
+          <a href="https://github.com/TanyaTechChec/-GazpromMedia-/blob/f98d1ebb60300a35e4fe4f64d9c096e819cedec1/README.md" target="_blank" class="project-card reveal">
+            <div class="project-card__tag">Исследовательское тестирование</div>
+            <h3 class="project-card__title">Газпром-Медиа</h3>
+            <p class="project-card__desc">«Кухня РФ» — исследовательское тестирование продукта</p>
+            <div class="project-card__arrow">→</div>
+          </a>
+
+          <a href="https://github.com/TanyaTechChec/-ONLY-/blob/3a2d779916e90186e53aad66a63b6d85d7099041/README.md" target="_blank" class="project-card reveal reveal--delay-1">
+            <div class="project-card__tag">Функциональное тестирование</div>
+            <h3 class="project-card__title">Only</h3>
+            <p class="project-card__desc">Комплексное тестирование платформы</p>
+            <div class="project-card__arrow">→</div>
+          </a>
+
+          <a href="https://github.com/TanyaTechChec/Shopping-List/blob/c0e47f5617968e386c32a2210aa9a10a6416c0e3/README.md" target="_blank" class="project-card reveal reveal--delay-2">
+            <div class="project-card__tag">iOS тестирование</div>
+            <h3 class="project-card__title">Список покупок</h3>
+            <p class="project-card__desc">Тестирование iOS-приложения «Список покупок»</p>
+            <div class="project-card__arrow">→</div>
+          </a>
+
+          <a href="https://docs.google.com/document/d/1hbxZ3IhbugGotwK6x2m_5X13wMy9_80lcviJ6cu1kQg/edit?usp=sharing" target="_blank" class="project-card reveal reveal--delay-3">
+            <div class="project-card__tag">Веб-тестирование</div>
+            <h3 class="project-card__title">Jobby</h3>
+            <p class="project-card__desc">Тестирование веб-приложения</p>
+            <div class="project-card__arrow">→</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Документация -->
+    <section class="section docs" id="docs">
+      <div class="section__inner">
+        <div class="section__label reveal">Артефакты</div>
+        <h2 class="section__title reveal">Документация и тестирование 📂</h2>
+        <div class="docs-grid reveal">
+
+          <a href="https://github.com/TanyaTechChec/jobby-api-testing" target="_blank" class="doc-item">
+            <div class="doc-item__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <span>Коллекция API</span>
+            <svg class="doc-item__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="https://tatianaastax.youtrack.cloud/issues?q=project:%20%7B%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%20%D0%9C%D0%B5%D1%82%D1%80%D0%BE%203.6%7D%20State:%20Unresolved" target="_blank" class="doc-item">
+            <div class="doc-item__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c10 0 10-22 0-22S2 22 12 22z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+            </div>
+            <span>Баг-репорты YouTrack</span>
+            <svg class="doc-item__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="https://github.com/TanyaTechChec/PostgreSQL/blob/main/sql" target="_blank" class="doc-item">
+            <div class="doc-item__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <span>Запросы SQL</span>
+            <svg class="doc-item__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="https://docs.google.com/document/d/1xg7ONQmpojjPfhKSuTpgGN1wWIisPa6S8kkm2PgaiMU/edit?tab=t.0" target="_blank" class="doc-item">
+            <div class="doc-item__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <span>Консоль команды</span>
+            <svg class="doc-item__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="https://github.com/TanyaTechChec/FooterTZONLY/blob/master/test_footer.py" target="_blank" class="doc-item">
+            <div class="doc-item__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span>Автотест — поиск футера</span>
+            <svg class="doc-item__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="https://docs.google.com/spreadsheets/d/1HBPSoMVdfSA1lOlUcGTd-15SApfWIR1M57i4w8F-uuQ/edit?gid=330873014#gid=330873014&range=A2:A15" target="_blank" class="doc-item">
+            <div class="doc-item__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <span>Тест-кейсы</span>
+            <svg class="doc-item__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="https://docs.google.com/spreadsheets/d/1HBPSoMVdfSA1lOlUcGTd-15SApfWIR1M57i4w8F-uuQ/edit?gid=0#gid=0&range=A1" target="_blank" class="doc-item">
+            <div class="doc-item__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+            </div>
+            <span>КЭ и ГЗ</span>
+            <svg class="doc-item__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="https://docs.google.com/spreadsheets/d/1HBPSoMVdfSA1lOlUcGTd-15SApfWIR1M57i4w8F-uuQ/edit?gid=1663814362#gid=1663814362&range=A2" target="_blank" class="doc-item">
+            <div class="doc-item__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <span>Баг-репорты</span>
+            <svg class="doc-item__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="https://disk.yandex.ru/i/ruhAdNXyMkGHLQ" target="_blank" class="doc-item">
+            <div class="doc-item__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <span>Отчёт о тестировании</span>
+            <svg class="doc-item__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Слайдер с артефактами -->
+    <section class="section artifacts" id="artifacts">
+      <div class="section__inner">
+        <div class="section__label reveal">Галерея</div>
+        <h2 class="section__title reveal">Тестовая документация 🧪</h2>
+        <p class="section__subtitle reveal">Примеры тест-кейсов, чек-листов и баг-репортов</p>
+
+        <div class="slider reveal" id="slider">
+          <div class="slider__track-wrapper">
+            <div class="slider__track" id="sliderTrack">
+              <div class="slider__slide" data-label="Тест-кейсы">
+                <img src="images/Screenshot_1.png" alt="Тест-кейсы" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="Чек-лист API">
+                <img src="images/Screenshot_2.png" alt="Чек-лист API" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="SQL">
+                <img src="images/Screenshot_4.png" alt="SQL" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="Баг-репорт">
+                <img src="images/Screenshot_3.png" alt="Баг-репорт" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="Чек-лист">
+                <img src="images/Screenshot_6.png" alt="Чек-лист" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="Попарное тестирование">
+                <img src="images/Screenshot_1.png" alt="Попарное тестирование" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="Таблица принятия решений">
+                <img src="images/Screenshot_10.png" alt="Таблица принятия решений" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="Mind Map">
+                <img src="images/Screenshot_11.png" alt="Mind Map" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="План тестирования">
+                <img src="images/Screenshot_12.png" alt="План тестирования" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="Отчёт о тестировании">
+                <img src="images/Screenshot_13.png" alt="Отчёт о тестировании" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="Postman">
+                <img src="images/Screenshot_14.png" alt="Postman" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="КЭ и ГЗ">
+                <img src="images/Screenshot_5.png" alt="КЭ и ГЗ" loading="lazy">
+              </div>
+              <div class="slider__slide" data-label="ПР на кнопку">
+                <img src="images/Screenshot_7.png" alt="ПР на кнопку" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__controls">
+            <button class="slider__btn slider__btn--prev" id="sliderPrev" aria-label="Назад">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="slider__counter">
+              <span id="sliderCurrent">1</span> / <span id="sliderTotal">13</span>
+            </div>
+            <div class="slider__label" id="sliderLabel">Тест-кейсы</div>
+            <button class="slider__btn slider__btn--next" id="sliderNext" aria-label="Вперёд">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+
+          <div class="slider__dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section contact" id="contact">
+      <div class="section__inner">
+        <div class="section__label reveal">Связь</div>
+        <h2 class="section__title reveal">Давайте знакомиться 📞</h2>
+        <p class="section__subtitle reveal">Открыта к новым проектам и возможностям</p>
+        <div class="contact__cards reveal">
+          <a href="mailto:tastakhovafreel29@gmail.com" class="contact-card">
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card__info">
+              <span class="contact-card__label">Email</span>
+              <span class="contact-card__value">tastakhovafreel29@gmail.com</span>
+            </div>
+            <svg class="contact-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+          <a href="https://t.me/tasi_astax" target="_blank" class="contact-card">
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+            <div class="contact-card__info">
+              <span class="contact-card__label">Telegram</span>
+              <span class="contact-card__value">@tasi_astax</span>
+            </div>
+            <svg class="contact-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 Татьяна · QA Portfolio</p>
+      <p class="footer__note">Сделано с вниманием к деталям ✓</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lightbox__content">
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Предыдущее">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Следующее">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
