@@ -315,3 +315,55 @@ document.addEventListener('DOMContentLoaded', () => {
     { passive: true },
   );
 });
+/* ================================================
+   Логотипы в карточках проектов — добавить в конец style.css
+   ================================================ */
+
+.project-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-sm);
+  gap: var(--sp-sm);
+}
+
+.project-card__logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: var(--r-sm);
+  flex-shrink: 0;
+}
+
+/* Логотип на светлом фоне (Only) */
+.project-card__logo--light {
+  background: #f2f2f2;
+  padding: 4px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--clr-border-soft);
+}
+
+/* Логотип на тёмном фоне (Jobby) */
+.project-card__logo--dark {
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+/* Плейсхолдер если нет лого (iOS карточка) */
+.project-card__logo-placeholder {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  background: var(--clr-chip-bg);
+  border-radius: var(--r-sm);
+  flex-shrink: 0;
+}
+
+/* Тег (категория) теперь выравнивается справа */
+.project-card__tag {
+  text-align: right;
+  flex: 1;
+}
